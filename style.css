@@ -1,0 +1,176 @@
+/* ===== Базові налаштування ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    background-color: #f5f5f2;
+    line-height: 1.5;
+}
+
+a {
+    color: #6a4fb6;
+}
+
+a:hover {
+    color: #4b3585;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Загальна сітка сторінки ===== */
+.page {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "header  header"
+        "sidebar content"
+        "footer  footer";
+    min-height: 100vh;
+}
+
+/* ===== Верхній колонтитул ===== */
+.header {
+    grid-area: header;
+    background-color: #3c2e63;
+    color: #fff;
+    padding: 24px 32px;
+}
+
+.header h1 {
+    margin: 0 0 8px 0;
+}
+
+.header p {
+    margin: 0;
+    max-width: 700px;
+}
+
+/* ===== Бокова колонка ===== */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ece8f7;
+    padding: 24px 16px;
+    border-right: 1px solid #d6cdf0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav li {
+    margin-bottom: 12px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sidebar nav a:hover {
+    background-color: #d6cdf0;
+}
+
+/* ===== Основний вміст ===== */
+.content {
+    grid-area: content;
+    padding: 24px 32px;
+    background-color: #ffffff;
+}
+
+.content section {
+    margin-bottom: 32px;
+}
+
+/* ===== Нижній колонтитул ===== */
+.footer {
+    grid-area: footer;
+    background-color: #3c2e63;
+    color: #fff;
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+
+.footer nav a {
+    color: #fff;
+}
+
+/* ===== Таблиця ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ece8f7;
+}
+
+/* ===== Форма ===== */
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #6a4fb6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4b3585;
+}
+
+/* ===== Адаптивність ===== */
+@media (max-width: 700px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #d6cdf0;
+    }
+}

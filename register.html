@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бета-тест RPG — Реєстрація</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="header">
+        <h1>Зареєструватися на бета-тест</h1>
+        <p>
+            Перед реєстрацією радимо переглянути
+            <a href="schedule.html">розклад тестових сесій</a>.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про гру</a></li>
+                <li><a href="schedule.html">Розклад бета-тестів</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <main>
+
+            <section>
+                <h2>Що потрібно для участі?</h2>
+                <ul>
+                    <li>Мати ПК із підтримуваною операційною системою.</li>
+                    <li>Зареєструватися на бета-тест.</li>
+                    <li>Грати протягом обраної тестової сесії.</li>
+                    <li>Повідомляти про помилки та ділитися враженнями.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Форма реєстрації</h2>
+
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="nickname">Ігровий нік:</label><br>
+                        <input type="text" id="nickname" name="nickname" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="test-date">Оберіть дату тестування:</label><br>
+                        <select id="test-date" name="test-date" required>
+                            <option value="">-- Оберіть дату --</option>
+                            <option value="20-09-2026">20.09.2026</option>
+                            <option value="27-09-2026">27.09.2026</option>
+                            <option value="04-10-2026">04.10.2026</option>
+                            <option value="11-10-2026">11.10.2026</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="platform">Платформа:</label><br>
+                        <select id="platform" name="platform">
+                            <option value="windows">Windows</option>
+                            <option value="macos">macOS</option>
+                            <option value="linux">Linux</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Чому ви хочете взяти участь?</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="rules" name="rules" required>
+                        <label for="rules">
+                            Я погоджуюся з правилами участі у бета-тесті.
+                        </label>
+                    </p>
+
+                    <button type="submit">Зареєструватися</button>
+
+                </form>
+            </section>
+
+            <section>
+                <h2>Ще не впевнені?</h2>
+                <p>
+                    Дізнайтеся більше <a href="about.html">про гру</a>
+                    або поверніться на <a href="index.html">головну сторінку</a>.
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 RPG Game. Усі права захищені.</p>
+        <p>Дякуємо за допомогу у створенні гри!</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про гру</a></li>
+                <li><a href="schedule.html">Розклад</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+</body>
+</html>
